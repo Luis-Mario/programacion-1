@@ -1,0 +1,29 @@
+// sumac++ luis mario.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include  <iostream>
+#include "conio.h"
+using namespace std;
+int main() {
+	float a;
+	float b;
+	float c;
+	float d;
+	float e;
+	float f;
+	cout << "Ingrese el primer numero:" << endl;
+	cin >> a;
+	cout << "Ingrese el segundo numero:" << endl;
+	cin >> b;
+	c = a+b;
+	d = a-b;
+	e = a*b;
+	f = a/b;
+		cout << "La suma es: " << c << endl;
+	cout << "La resta es:" << d << endl;
+	cout << "La multiplicacion es:" << e << endl;
+	cout << "La division es:" << f << endl;
+	getch()
+	return 0;
+}
