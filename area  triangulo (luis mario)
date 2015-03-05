@@ -1,0 +1,32 @@
+// area triangulo (luis mario).cpp : Defines the entry point for the console application.
+// Autor: Luis Mario Salazar.
+// Fecha:5/03/2015
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include <cmath>
+
+
+
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+
+int main() {
+	float a,b,c,p,area;
+	
+	cout << "Ingresar lado a: " << endl;
+	cin >> a;
+	cout << "Ingresar lado b:  " << endl;
+	cin >> b;
+	cout << "Ingresar lado c:" << endl;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << "si eres del triangulo es:" << area << endl;
+	getch();
+	
+	return 0;
