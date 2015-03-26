@@ -1,0 +1,32 @@
+// practica 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+using namespace std;
+void main()
+
+{float A,B,C,R;
+cout<<"ingrese primer numero";
+cin>> A
+	if<A<0 A>10)
+		cout<<"Error A esta fuera de rango";
+	else
+{cout<<"ingrese segundo numero";
+cin >>B;
+IF(b<0) (b>10))
+	cout<<"Error B esta fuera de rango";
+}
+
+else
+	cout<< "Ingrese tercer numero"
+	cin>>C;
+	if(C<0) (C>10)
+		cout<<"Error C esta fuera de rango";
+	else
+		R=(A+B+C)/3;
+
+{
+getch()
+}
