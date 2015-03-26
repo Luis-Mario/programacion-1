@@ -1,0 +1,30 @@
+#include "stdafx.h"
+Proceso sin_titulo
+	Escribir "Introducir A,B,C"
+	Leer A
+	Leer B
+	Leer C
+	D<- B*B-4*A*C
+	Si (D=0)Entonces
+		X<- -B/2*A
+		Escribir "Solucion unica:",X
+	Sino 
+		Si (D>0)Entonces
+			X1 <- (-B + raiz (D)/2*A
+			X2 <- (-B - raiz (D)/2*A
+			Escribir "Soluciones reales"
+			Escribir "X1:",X1
+			Escribir "X2:",X2
+		Sino
+			XR <- -B/2*A
+			XI <-(raiz(-D))2*A
+			Escribir "Soluciones imaginarias"
+			Escribir "X1:"XR, "+",XI,"i"
+			Escribir "X2:"XR, "-" XI,"i"
+	FinSi
+FinProceso
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	return 0;
+}
