@@ -1,0 +1,29 @@
+// ejercicio en clase, como separar digitos.cpp : Defines the entry point for the console application.
+//Autor: Luis Mario Salazar Mercado.
+//fecha: 07/04/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include <math.h>
+ 
+using namespace std;
+ 
+ 
+// Lo que hacemos es ir dividiendo el número entre 10, entre 100, entre 1000... Hasta que el número y el resto den lo mismo.
+int cuantasCifras(int numero) {
+ int divisor = 10;
+ int residuo = 0;
+ int cifras_aux = 0;
+ 
+ while (residuo != numero){
+  residuo = numero % divisor;
+  divisor = divisor * 10;
+  cifras_aux++;
+ }
+ cifras_aux--;
+ return cifras_aux;
+}
+ 
+void dividir_en_digitos(int numero, int cifras) {
+ 
+
