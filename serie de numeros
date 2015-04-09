@@ -1,0 +1,23 @@
+// numero mayor de una serie de numeros.cpp : Defines the entry point for the console application.
+//Autor: Luis mario Salazar Mercado.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{int n,a,nmay,N;
+cout <<"ingrese cantidad de numeros:";
+cin >> N;
+a=0; n=0; nmay=0;
+for (a=1; a<=N,a=++)
+{
+cout <<"Ingrese un numero";
+cin>>n;
+if (a==1) nmay=n;
+if (n>nmay) nmay=n;
+} 
+cout<<"El numero mayor es : " <<nmay;
+getch();
+} 
