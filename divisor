@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+
+int main() {
+	float a;
+	float b;
+	int mayor;
+	int menor;
+	cin >> a >> b;
+	if (a>b) {
+		menor = b;
+		mayor = a;}
+	 else {
+		menor = a;
+		mayor = b;}
+	
+	if (mayor%menor==0) {
+		cout << "es divisisor" << endl;
+	} else {
+		cout << "no es divisor" << endl;
+	}
+	getch();
+	return 0;
+}
