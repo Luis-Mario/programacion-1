@@ -1,0 +1,35 @@
+// funciones.cpp : Defines the entry point for the console application.
+//autor: Luis Mario Salazar Mercado.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+//Prototipos
+float potencia (float base, int exponente);
+
+//Cuerpo principal
+void main()
+{
+	float b,pot;
+	int e;
+	cout<< "Ingrasar la Base:";
+	cin>>b;
+	cout<<"Ingresar el exponente: ";
+	cin>>e;
+	//Llamar a la funcion 
+	pot=potencia(b,e);
+	cout<<"La potencia de:"<<b<<" elevado a:"<<e<<" es: "<<pot;
+	getch();
+}
+
+float potencia(float base, int exponente)
+{
+	float aux;
+	aux=1;
+	for(int i=1;i<=exponente;i++)
+		aux=aux*base;
+	return aux;
+}
