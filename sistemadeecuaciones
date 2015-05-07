@@ -1,0 +1,43 @@
+// sistemaecuaciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+//Variables globales 
+float x,y;
+
+//Prototipo de las funciones 
+void sistema (float A, float B, float C, float D, float E,float F);
+
+//Cuerpo Principal
+void main ()
+{
+	float A,B,C,D,E,F;
+	cout<<"Ingrese coeficiente A:";
+	cin>>A;
+	cout<<"Ingrese coeficiente B:";
+	cin>>B;
+	cout<<"Ingrese coeficiente C:";
+	cin>>C;
+	cout<<"Ingrese coeficiente D:";
+	cin>> D;
+	cout<<"Ingrese coeficiente E:";
+	cin>>E;
+	cout<<"Ingrese coeficiente F:";
+	cin>>F;
+	sistema(A,B,C,D,E,F);
+	cout<<"El resultado de x es:";
+	cout <<x;
+	cout<<"El resultado de y es:";
+	cout <<y;
+	getch();
+}
+//Declaracion de funciones 
+void sistema (float A, float B, float C, float D,float E, float F)
+{
+	y=(D*C-A*F)/(A*E-D*B);
+	x=(-C-B*y)/A;
+}
