@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float potencia(float base, int exponente);
+void suma(float base, float n, float &resul);
+
+
+void main()
+{float s;
+ int b, e, i;
+	cout<<"Ingrese X: ";
+	cin>>b;
+	cout<<"Ingrese N: ";
+	cin>>e;
+	suma(b,e,s);
+	cout<<"El resultado es: "<<s;
+ getch();
+}
+
+float potencia(float base, int exponente)
+{float x;
+ int i;
+ x=1;
+ for(i=1;i<=exponente;i++)
+	 x=x*base;
+ return x;
+}
+
+void suma(float base, float n, float &resul)
+{int a=1,i;
+ resul=0;
+ for(i=1;i<=n;i++)
+	resul=resul+potencia(base,i);
+}
+
+
+
