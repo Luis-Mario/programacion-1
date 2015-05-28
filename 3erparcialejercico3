@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int posicion(int x);
+
+void main()
+{float r,s,i,d;
+ int n;
+ cout<<"Porfavor ingrese un numero, para la conversion"<<endl;
+ cin>>n;
+ s=posicion(n);
+ cout<<"La posesion es: "<<s;
+ getch();
+}
+
+int posicion(int x)
+{
+ int i=1,pos=0,d; 
+ int mayor=0;
+ while(x!=0)
+	  {
+	   d=x%10;
+	   if (d>mayor)
+	   {
+		   mayor=d;
+	       pos=i;
+	   }
+	   x=x/10;
+	   i++;
+	  }
+ return pos;
+}
+
+
+
+
+
+
+
+
+
+
+
